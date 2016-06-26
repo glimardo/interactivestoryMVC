@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/page0"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="You deftly land your ship near where the distress signal originated. You didn&apos;t notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century."
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:lineSpacingMultiplier="1.2"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop and investigate"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/storyTextView"
+        android:layout_alignStart="@+id/storyTextView"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue home to Earth"
+        android:id="@+id/choiceButton1"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec" />
+</RelativeLayout>
